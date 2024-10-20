@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class JumpController : MonoBehaviour
 {
-    private readonly int JumpAnimationHash = Animator.StringToHash("Jump");
-    private readonly int RunAnimationHash = Animator.StringToHash("Run");
+    private readonly int _jumpAnimationHash = Animator.StringToHash("Jump");
+    private readonly int _runAnimationHash = Animator.StringToHash("Run");
+
     [SerializeField] private Animator _playerAnimator;
-    public float jumpForce = 5f; 
-    private Rigidbody rb;
+    [SerializeField] private float _jumpForce = 5f; 
+    private Rigidbody _rb;
     private bool _isGrounded;
     private SlideController _dodgeController;
 
@@ -18,7 +19,7 @@ public class JumpController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>(); 
+        _rb = GetComponent<Rigidbody>(); 
         _dodgeController = GetComponent<SlideController>(); 
     }
 
@@ -32,8 +33,8 @@ public class JumpController : MonoBehaviour
 
     void Jump()
     {
-        _playerAnimator.Play(JumpAnimationHash);
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        _playerAnimator.Play(_jumpAnimationHash);
+        _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
         _isGrounded = false; 
     }
 
@@ -41,7 +42,7 @@ public class JumpController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground") && !_dodgeController.IsSlide)
         {
-            _playerAnimator.Play(RunAnimationHash);
+            _playerAnimator.Play(_runAnimationHash);
             _isGrounded = true;
         }
     }

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SlideController : MonoBehaviour
 {
-    private readonly int SlideAnimationHash = Animator.StringToHash("Slide");
-    private readonly int RunAnimationHash = Animator.StringToHash("Run");
+    private readonly int _slideAnimationHash = Animator.StringToHash("Slide");
+    private readonly int _runAnimationHash = Animator.StringToHash("Run");
+
     [SerializeField] private Animator _playerAnimator;
     private bool _isSlide;
 
@@ -24,14 +25,14 @@ public class SlideController : MonoBehaviour
 
     void Dodge()
     {
-        _playerAnimator.Play(SlideAnimationHash);
-        StartCoroutine(ReturnToRunState());
+        _playerAnimator.Play(_slideAnimationHash);
+        StartCoroutine(ReturnToRunStateFromSlide());
     }
 
-    IEnumerator ReturnToRunState()
+    IEnumerator ReturnToRunStateFromSlide()
     {
         yield return new WaitForSeconds(1f);
         _isSlide = false;
-        _playerAnimator.Play(RunAnimationHash);
+        _playerAnimator.Play(_runAnimationHash);
     }
 }

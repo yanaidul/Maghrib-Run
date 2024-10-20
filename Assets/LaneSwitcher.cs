@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class LaneSwitcher : MonoBehaviour
 {
-    public float laneDistance = 2f; 
-    public float switchSpeed = 10f; 
-    private int currentLane = 1; 
-    private Vector3 targetPosition;
+    private readonly int _dodgeLeftAnimationHash = Animator.StringToHash("Dodge Left");
+    private readonly int _dodgeRightAnimationHash = Animator.StringToHash("Dodge Right");
+    private readonly int _runAnimationHash = Animator.StringToHash("Run");
+
+    [SerializeField] private Animator _playerAnimator;
+    [SerializeField] private float _laneDistance = 2f; 
+    [SerializeField] private float _switchSpeed = 10f; 
+    private int _currentLane = 1; 
+    private Vector3 _targetPosition;
     private JumpController _jumpController;
 
     private void Awake()
@@ -17,7 +22,8 @@ public class LaneSwitcher : MonoBehaviour
 
     void Start()
     {
-        targetPosition = transform.position;
+
+        _targetPosition = transform.position;
     }
 
     void Update()
@@ -32,24 +38,31 @@ public class LaneSwitcher : MonoBehaviour
             MoveRight();
         }
 
-        transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * switchSpeed);
+        transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _switchSpeed);
     }
 
     void MoveRight()
     {
-        if (currentLane > 0) 
+        if (_currentLane > 0) 
         {
-            currentLane--;
-            targetPosition = new Vector3(transform.position.x, transform.position.y, currentLane * laneDistance - laneDistance);
+            _playerAnimator.Play(_dodgeRightAnimationHash);
+            _currentLane--;
+            _targetPosition = new Vector3(transform.position.x, transform.position.y, _currentLane * _laneDistance - _laneDistance);
         }
     }
 
     void MoveLeft()
     {
-        if (currentLane < 2)
+        if (_currentLane < 2)
         {
-            currentLane++;
-            targetPosition = new Vector3(transform.position.x, transform.position.y, currentLane * laneDistance - laneDistance);
+            _playerAnimator.Play(_dodgeLeftAnimationHash);
+            _currentLane++;
+            _targetPosition = new Vector3(transform.position.x, transform.position.y, _currentLane * _laneDistance - _laneDistance);
         }
+    }
+
+    public void ReturnToRunStateFromDodge()
+    {
+        _playerAnimator.Play(_runAnimationHash);
     }
 }
