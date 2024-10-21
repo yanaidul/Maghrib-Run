@@ -31,7 +31,7 @@ public class SlideController : MonoBehaviour
 
     IEnumerator ReturnToRunStateFromSlide()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.7f);
         _isSlide = false;
         _playerAnimator.Play(_runAnimationHash);
     }
