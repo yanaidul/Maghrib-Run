@@ -2516,6 +2516,81 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2121190898}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &157098958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157098959}
+  - component: {fileID: 157098960}
+  - component: {fileID: 157098961}
+  m_Layer: 0
+  m_Name: Score Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157098959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157098958}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 97.06971, y: 658.9263, z: -1.9506931}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157098960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157098958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52032205e7dff83489d8be6fd8f0f116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreText: {fileID: 887680550}
+  scoreMultiplier: 10
+--- !u!114 &157098961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157098958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 157098960}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: StopScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &167114029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -4313,6 +4388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &286525253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4454,6 +4530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &299378948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,6 +5076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &330955696 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -5430,6 +5508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &353569866 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -5758,6 +5837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &383473631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6000,6 +6080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &389020173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -6416,6 +6497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &425693187 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -8091,6 +8173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &520801128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8572,6 +8655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &562125577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8899,6 +8983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &594408433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -8938,6 +9023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &595399890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9765,6 +9851,141 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
+--- !u!1 &641570091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641570092}
+  - component: {fileID: 641570094}
+  - component: {fileID: 641570093}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &641570092
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641570091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1557309930}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 179.466, y: 5.557}
+  m_SizeDelta: {x: 387.827, y: 138.904}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &641570093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641570091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 61ca54332e51ebf4583e626580c6d683, type: 2}
+  m_sharedMaterial: {fileID: -537511224235690127, guid: 61ca54332e51ebf4583e626580c6d683,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4282390839
+  m_fontColor: {r: 0.21568629, g: 0.098039225, b: 0.2509804, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 103.8
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 103.8
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &641570094
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641570091}
+  m_CullTransparentMesh: 1
 --- !u!1001 &646332923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9910,6 +10131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &661964713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10045,6 +10267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &675880446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10185,6 +10408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &676087521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10618,6 +10842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &697824653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11738,6 +11963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &748058500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -12167,6 +12393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &766023105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12406,6 +12633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &770371353 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -12430,6 +12658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!65 &771160850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12503,8 +12732,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.375061, y: 2.1295812, z: 9.343486}
-  m_Center: {x: 1.6875324, y: 0.5647907, z: 0.66633654}
+  m_Size: {x: 3.15699, y: 2.1295812, z: 9.343486}
+  m_Center: {x: 1.6231041, y: 0.5647907, z: 0.66633654}
 --- !u!114 &779693965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12563,6 +12792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &800322526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -13103,6 +13333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &826883486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -13142,6 +13373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &830290980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13674,6 +13906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &858823094
 GameObject:
   m_ObjectHideFlags: 0
@@ -13780,6 +14013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &862861036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -13819,6 +14053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &865699107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14203,6 +14438,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
+--- !u!1 &887680548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887680549}
+  - component: {fileID: 887680551}
+  - component: {fileID: 887680550}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &887680549
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887680548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1963404054}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 179.466, y: 5.557}
+  m_SizeDelta: {x: 387.827, y: 138.904}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &887680550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887680548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 61ca54332e51ebf4583e626580c6d683, type: 2}
+  m_sharedMaterial: {fileID: -537511224235690127, guid: 61ca54332e51ebf4583e626580c6d683,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4282390839
+  m_fontColor: {r: 0.21568629, g: 0.098039225, b: 0.2509804, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 103.8
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 103.8
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &887680551
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887680548}
+  m_CullTransparentMesh: 1
 --- !u!1 &889616297
 GameObject:
   m_ObjectHideFlags: 0
@@ -14620,6 +14991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &909408803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15603,6 +15975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &983089387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16116,6 +16489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1014467108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16251,6 +16625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1015042106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16488,6 +16863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1026713629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16717,6 +17093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1029996877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16950,6 +17327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1044361159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17327,6 +17705,126 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1375080002}
   m_LocalEulerAnglesHint: {x: 0, y: 269.698, z: 0}
+--- !u!1 &1062829139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062829140}
+  - component: {fileID: 1062829143}
+  - component: {fileID: 1062829142}
+  - component: {fileID: 1062829141}
+  m_Layer: 5
+  m_Name: Pause Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1062829140
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062829139}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1115710917}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -250, y: -250}
+  m_SizeDelta: {x: 315.544, y: 315.544}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1062829141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062829139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1062829142}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1062829142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062829139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 39d7264be79a8234099fa19e4f20c8d3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1062829143
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062829139}
+  m_CullTransparentMesh: 1
 --- !u!1 &1064325831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -17366,6 +17864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1070011280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17707,6 +18206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1079327127 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -17746,6 +18246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1087823861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18252,12 +18753,117 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1111765079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
     type: 3}
   m_PrefabInstance: {fileID: 1550325128}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1115710913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115710917}
+  - component: {fileID: 1115710916}
+  - component: {fileID: 1115710915}
+  - component: {fileID: 1115710914}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1115710914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115710913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1115710915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115710913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 2180, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1115710916
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115710913}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1115710917
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115710913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1062829140}
+  - {fileID: 1963404054}
+  - {fileID: 1557309930}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1116837940 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -18613,6 +19219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1139982006
 GameObject:
   m_ObjectHideFlags: 0
@@ -19038,6 +19645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1164641934
 GameObject:
   m_ObjectHideFlags: 0
@@ -19182,6 +19790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1170151803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20275,6 +20884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1227512752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20505,6 +21115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1233901842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20735,6 +21346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1254327927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20870,6 +21482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1255416300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20974,6 +21587,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1255416300}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1256474329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256474332}
+  - component: {fileID: 1256474331}
+  - component: {fileID: 1256474330}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1256474330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256474329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1256474331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256474329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1256474332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256474329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1263287680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -21115,6 +21796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1273116268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21474,6 +22156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1305813798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -21513,6 +22196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1305983369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21648,6 +22332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1306437154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -21687,6 +22372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1307176994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -21828,6 +22514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1318799721 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -21969,6 +22656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1327835164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22189,6 +22877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1336160737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22329,6 +23018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1345255877
 GameObject:
   m_ObjectHideFlags: 0
@@ -22435,6 +23125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1371755933 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -22474,6 +23165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1373313872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -22513,6 +23205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1375080001
 GameObject:
   m_ObjectHideFlags: 0
@@ -23182,6 +23875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1385900770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23317,6 +24011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1386104508
 GameObject:
   m_ObjectHideFlags: 0
@@ -23562,6 +24257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1399796641 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -23601,6 +24297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1404757223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23823,6 +24520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1417235763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24130,6 +24828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1428067061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24270,6 +24969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1431646652
 GameObject:
   m_ObjectHideFlags: 0
@@ -24472,6 +25172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1435544545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24610,6 +25311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1449451048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24847,6 +25549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1455410285 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -24886,6 +25589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1475118352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25021,6 +25725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1479019205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25348,6 +26053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1486620641 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -25387,6 +26093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1491468900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25527,6 +26234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1492588547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -25566,6 +26274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1493828617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -25605,6 +26314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1498733855
 GameObject:
   m_ObjectHideFlags: 0
@@ -26254,6 +26964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1526700652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26771,6 +27482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1550325128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26906,6 +27618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1553279856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27046,6 +27759,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
+--- !u!1 &1557309929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1557309930}
+  - component: {fileID: 1557309932}
+  - component: {fileID: 1557309931}
+  m_Layer: 5
+  m_Name: UI_Gold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1557309930
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557309929}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 641570092}
+  m_Father: {fileID: 1115710917}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 475.304, y: -500}
+  m_SizeDelta: {x: 909.631, y: 226.418}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1557309931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557309929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c17ed0b03cf9f8a4f8515f02823dd8f4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1557309932
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557309929}
+  m_CullTransparentMesh: 1
 --- !u!1 &1567138911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -27085,6 +27875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1568650158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27220,6 +28011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1575025131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -27259,6 +28051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1575216948 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -27298,6 +28091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1578965850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27433,6 +28227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1580729010 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -27472,6 +28267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1588831182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28203,6 +28999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1647342361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28343,6 +29140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1660334595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28743,6 +29541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1675909334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28883,6 +29682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1677228381 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -28922,6 +29722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1686798901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29326,6 +30127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1696350478 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -29377,6 +30179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1708315790
 GameObject:
   m_ObjectHideFlags: 0
@@ -29756,6 +30559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1728447519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29992,6 +30796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1736957305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30132,6 +30937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1744276586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -30171,6 +30977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1746165121
 GameObject:
   m_ObjectHideFlags: 0
@@ -30300,6 +31107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1759119595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30529,6 +31337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1761354672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30743,6 +31552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1777090640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30977,6 +31787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1781694611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31105,6 +31916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1787197560 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -31144,6 +31956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1789461904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -31183,6 +31996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1790143486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31491,6 +32305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1809512137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31838,6 +32653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1825432598 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -31877,6 +32693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1838194408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -31916,6 +32733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1839714687
 GameObject:
   m_ObjectHideFlags: 0
@@ -32344,6 +33162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1861088834
 GameObject:
   m_ObjectHideFlags: 0
@@ -32552,6 +33371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1874795632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -32591,6 +33411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1875246996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32902,6 +33723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1887791202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -32941,6 +33763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1889165636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33069,6 +33892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1898691626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33209,6 +34033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1906729236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33344,6 +34169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1913786090
 GameObject:
   m_ObjectHideFlags: 0
@@ -33546,6 +34372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1921723433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33775,6 +34602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1924473123
 GameObject:
   m_ObjectHideFlags: 0
@@ -34077,6 +34905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1929428332
 GameObject:
   m_ObjectHideFlags: 0
@@ -34279,6 +35108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1939662725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34419,6 +35249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1940312521 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -34458,6 +35289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1941075893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34598,6 +35430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1948670546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -34637,6 +35470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1954290634 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -34676,6 +35510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1954499866
 GameObject:
   m_ObjectHideFlags: 0
@@ -34819,6 +35654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1962444219 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -34858,6 +35694,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
+--- !u!1 &1963404053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963404054}
+  - component: {fileID: 1963404056}
+  - component: {fileID: 1963404055}
+  m_Layer: 5
+  m_Name: UI_Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1963404054
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963404053}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 887680549}
+  m_Father: {fileID: 1115710917}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 475.304, y: -250}
+  m_SizeDelta: {x: 909.631, y: 226.418}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1963404055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963404053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4504a3cd1569fda4ea0f3f4a4d63476c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1963404056
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963404053}
+  m_CullTransparentMesh: 1
 --- !u!1 &1965605095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -34897,6 +35810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1967950505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35299,6 +36213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &1992076762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -35338,6 +36253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &1997614650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35466,6 +36382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2001121559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35601,6 +36518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &2001361426 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -35640,6 +36558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &2008151657
 GameObject:
   m_ObjectHideFlags: 0
@@ -35873,6 +36792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &2013008321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -35912,6 +36832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &2013603867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -36157,6 +37078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2023674989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36292,6 +37214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2025689897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36509,6 +37432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2057087918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36748,6 +37672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2074297591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36888,6 +37813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &2077301799 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -36927,6 +37853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &2077631022
 GameObject:
   m_ObjectHideFlags: 0
@@ -36937,6 +37864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2077631023}
   - component: {fileID: 2077631024}
+  - component: {fileID: 2077631025}
   m_Layer: 0
   m_Name: Collission Detector
   m_TagString: Player
@@ -36982,6 +37910,29 @@ CapsuleCollider:
   m_Height: 0.8248372
   m_Direction: 1
   m_Center: {x: -6.7655566e-18, y: 0.7325843, z: -1.9503499e-10}
+--- !u!136 &2077631025
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077631022}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Height: 0.4
+  m_Direction: 1
+  m_Center: {x: -6.7655566e-18, y: 0.19, z: -1.9503499e-10}
 --- !u!1001 &2081768104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37122,6 +38073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2084834926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37751,6 +38703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2096442574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37990,6 +38943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2100165309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38272,6 +39226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &2109325684 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -38311,6 +39266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2113567154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38540,6 +39496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1 &2118635041 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -38579,6 +39536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!1001 &2121190898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38714,6 +39672,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
+--- !u!1 &2131366510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2131366513}
+  - component: {fileID: 2131366512}
+  - component: {fileID: 2131366511}
+  m_Layer: 0
+  m_Name: Coin Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2131366511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131366510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6167de30196e9f448b8b761d446586cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coinText: {fileID: 641570093}
+--- !u!114 &2131366512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131366510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2131366511}
+        m_TargetAssemblyTypeName: CoinManager, Assembly-CSharp
+        m_MethodName: OnCollectCoins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &2131366513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131366510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 97.06971, y: 658.9263, z: -1.9506931}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2140168897 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -38753,6 +39786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622d60dd6438e0446a5bcc7104c33ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _onCollectCoins: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
 --- !u!4 &10838906092159474
 Transform:
   m_ObjectHideFlags: 0
@@ -41942,6 +42976,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerAnimator: {fileID: 919132147992657028}
+  _dodgeCapsuleCollider: {fileID: 2077631025}
+  _normalCapsuleCollider: {fileID: 2077631024}
 --- !u!65 &919132147992657034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41982,6 +43018,18 @@ MonoBehaviour:
       - m_Target: {fileID: 919132147992657036}
         m_TargetAssemblyTypeName: DeathHandler, Assembly-CSharp
         m_MethodName: OnPlayDeathAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 919132147992657031}
+        m_TargetAssemblyTypeName: LaneSwitcher, Assembly-CSharp
+        m_MethodName: OnObstacleCrash
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -68264,6 +69312,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 416968741}
+  - {fileID: 1115710917}
   - {fileID: 1141253848}
   - {fileID: 6231940}
   - {fileID: 1375080002}
@@ -68278,4 +69327,7 @@ SceneRoots:
   - {fileID: 631224952}
   - {fileID: 400647495}
   - {fileID: 543450651641652793}
+  - {fileID: 1256474332}
   - {fileID: 756570665}
+  - {fileID: 157098959}
+  - {fileID: 2131366513}
