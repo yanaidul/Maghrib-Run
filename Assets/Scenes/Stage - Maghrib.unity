@@ -247,7 +247,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6231940}
   - component: {fileID: 6231941}
-  - component: {fileID: 6231942}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 1
   m_TagString: Untagged
@@ -304,34 +303,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &6231942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6231939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &27465714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6051,7 +6022,6 @@ GameObject:
   m_Component:
   - component: {fileID: 400647495}
   - component: {fileID: 400647496}
-  - component: {fileID: 400647497}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 12
   m_TagString: Untagged
@@ -6098,34 +6068,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &400647497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400647494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &403248903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9757,7 +9699,6 @@ GameObject:
   m_Component:
   - component: {fileID: 631224952}
   - component: {fileID: 631224953}
-  - component: {fileID: 631224954}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 11
   m_TagString: Untagged
@@ -9824,34 +9765,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &631224954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631224951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &646332923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11533,7 +11446,6 @@ GameObject:
   m_Component:
   - component: {fileID: 731178604}
   - component: {fileID: 731178605}
-  - component: {fileID: 731178606}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 8
   m_TagString: Untagged
@@ -11596,34 +11508,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &731178606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731178603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &733693520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11866,6 +11750,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1867039089}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &756570662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 756570665}
+  - component: {fileID: 756570664}
+  - component: {fileID: 756570663}
+  m_Layer: 0
+  m_Name: Platform Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &756570663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756570662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 756570664}
+        m_TargetAssemblyTypeName: PlatformManager, Assembly-CSharp
+        m_MethodName: OnStopPlatforms
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &756570664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756570662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11405ab9a9252d24bae6207a796d2459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _platforms:
+  - {fileID: 6231941}
+  - {fileID: 1375080003}
+  - {fileID: 1875732606}
+  - {fileID: 1422858420}
+  - {fileID: 1482951277}
+  - {fileID: 1954499868}
+  - {fileID: 1929428334}
+  - {fileID: 731178605}
+  - {fileID: 935558786}
+  - {fileID: 1733035666}
+  - {fileID: 631224953}
+  - {fileID: 400647496}
+--- !u!4 &756570665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756570662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &758429229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14865,7 +14835,6 @@ GameObject:
   m_Component:
   - component: {fileID: 935558785}
   - component: {fileID: 935558786}
-  - component: {fileID: 935558787}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 9
   m_TagString: Untagged
@@ -14917,34 +14886,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &935558787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935558784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &937771992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22582,7 +22523,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1375080002}
   - component: {fileID: 1375080003}
-  - component: {fileID: 1375080004}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 2
   m_TagString: Untagged
@@ -22637,34 +22577,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &1375080004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375080001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1380528882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24020,7 +23932,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1422858419}
   - component: {fileID: 1422858420}
-  - component: {fileID: 1422858421}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 4
   m_TagString: Untagged
@@ -24096,34 +24007,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &1422858421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422858418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1423729998
 GameObject:
   m_ObjectHideFlags: 0
@@ -25242,7 +25125,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1482951276}
   - component: {fileID: 1482951277}
-  - component: {fileID: 1482951278}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 5
   m_TagString: Untagged
@@ -25326,34 +25208,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &1482951278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482951275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1485818087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30019,7 +29873,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1733035665}
   - component: {fileID: 1733035666}
-  - component: {fileID: 1733035667}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 10
   m_TagString: Untagged
@@ -30100,34 +29953,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &1733035667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733035664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1736173311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -32875,7 +32700,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1875732605}
   - component: {fileID: 1875732606}
-  - component: {fileID: 1875732607}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 3
   m_TagString: Untagged
@@ -32945,34 +32769,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &1875732607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875732604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1880268694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34291,7 +34087,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1929428333}
   - component: {fileID: 1929428334}
-  - component: {fileID: 1929428335}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 7
   m_TagString: Untagged
@@ -34349,34 +34144,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &1929428335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929428332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1935833849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34919,7 +34686,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1954499867}
   - component: {fileID: 1954499868}
-  - component: {fileID: 1954499869}
   m_Layer: 0
   m_Name: Stage Maghrib - Platform 6
   m_TagString: Untagged
@@ -35014,34 +34780,6 @@ MonoBehaviour:
   speed: 10
   resetPosition: -30
   startPosition: 330
---- !u!114 &1954499869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954499866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEventNoParam: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
-  _responsesNoParam:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6231941}
-        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
-        m_MethodName: OnStopPlatform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1956134990 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -68540,3 +68278,4 @@ SceneRoots:
   - {fileID: 631224952}
   - {fileID: 400647495}
   - {fileID: 543450651641652793}
+  - {fileID: 756570665}
