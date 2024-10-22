@@ -42,7 +42,7 @@ public class LaneSwitcher : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _switchSpeed);
     }
 
-    void MoveRight()
+    public void MoveRight()
     {
         if (_currentLane > 0) 
         {
@@ -52,7 +52,7 @@ public class LaneSwitcher : MonoBehaviour
         }
     }
 
-    void MoveLeft()
+    public void MoveLeft()
     {
         if (_currentLane < 2)
         {

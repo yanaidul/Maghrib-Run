@@ -9,6 +9,8 @@ public class JumpController : MonoBehaviour
     private readonly int _runAnimationHash = Animator.StringToHash("Run");
 
     [SerializeField] private Animator _playerAnimator;
+    [SerializeField] private GameEventNoParam _onWeweRun;
+    [SerializeField] private GameEventNoParam _onWeweJump;
     [SerializeField] private float _jumpForce = 5f; 
     private Rigidbody _rb;
     private bool _isGrounded;
@@ -25,17 +27,21 @@ public class JumpController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && _isGrounded)
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Jump();
         }
     }
 
-    void Jump()
+    public void Jump()
     {
-        _playerAnimator.Play(_jumpAnimationHash);
-        _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
-        _isGrounded = false; 
+        if (_isGrounded)
+        {
+            _onWeweJump.Raise();
+            _playerAnimator.Play(_jumpAnimationHash);
+            _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
+            _isGrounded = false;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -44,6 +50,19 @@ public class JumpController : MonoBehaviour
         {
             _playerAnimator.Play(_runAnimationHash);
             _isGrounded = true;
+            _onWeweRun.Raise();
         }
+    }
+
+    IEnumerator OnDelayWeweJumpAnimation()
+    {
+        yield return new WaitForSeconds(0.25f);
+        _onWeweJump.Raise();
+    }
+
+    IEnumerator OnDelayWeweRunAnimation()
+    {
+        yield return new WaitForSeconds(0.25f);
+        _onWeweRun.Raise();
     }
 }

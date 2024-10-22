@@ -7,6 +7,8 @@ public class SlideController : MonoBehaviour
     private readonly int _slideAnimationHash = Animator.StringToHash("Slide");
     private readonly int _runAnimationHash = Animator.StringToHash("Run");
 
+    [SerializeField] private GameEventNoParam _onWeweRun;
+    [SerializeField] private GameEventNoParam _onWeweSlide;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private CapsuleCollider _dodgeCapsuleCollider;
     [SerializeField] private CapsuleCollider _normalCapsuleCollider;
@@ -20,16 +22,18 @@ public class SlideController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            _isSlide = true;
             Dodge();
         }
     }
 
-    void Dodge()
+    public void Dodge()
     {
+        _isSlide = true;
         _dodgeCapsuleCollider.enabled = true;
         _normalCapsuleCollider.enabled = false;
         _playerAnimator.Play(_slideAnimationHash);
+        //StartCoroutine(OnDelayWeweSlideAnimation());
+        _onWeweSlide.Raise();
         StartCoroutine(ReturnToRunStateFromSlide());
     }
 
@@ -40,5 +44,19 @@ public class SlideController : MonoBehaviour
         _normalCapsuleCollider.enabled = true;
         _isSlide = false;
         _playerAnimator.Play(_runAnimationHash);
+        //StartCoroutine(OnDelayWeweRunAnimation());
+        _onWeweRun.Raise();
+    }
+
+    IEnumerator OnDelayWeweSlideAnimation()
+    {
+        yield return new WaitForSeconds(0.25f);
+        _onWeweSlide.Raise();
+    }
+
+    IEnumerator OnDelayWeweRunAnimation()
+    {
+        yield return new WaitForSeconds(0.25f);
+        _onWeweRun.Raise();
     }
 }

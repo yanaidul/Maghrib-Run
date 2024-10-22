@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: WhatsApp Image 2024-08-29 at 18.49.30_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 464
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7908867c0039f4a9c5d59ba69816d3
+      internalID: 1833270909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhatsApp Image 2024-08-29 at 18.49.30_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 155
+        width: 463
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d603ca3ecdcdb5b4995cb73438e1c920
+      internalID: 1751904939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhatsApp Image 2024-08-29 at 18.49.30_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 464
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333d725ef1705d54b9ced9b5e9cda72e
+      internalID: 149534025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +182,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WhatsApp Image 2024-08-29 at 18.49.30_0: 1833270909
+      WhatsApp Image 2024-08-29 at 18.49.30_1: 1751904939
+      WhatsApp Image 2024-08-29 at 18.49.30_2: 149534025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
