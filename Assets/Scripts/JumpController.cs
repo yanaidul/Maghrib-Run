@@ -37,6 +37,7 @@ public class JumpController : MonoBehaviour
     {
         if (_isGrounded)
         {
+            SFXHandler.GetInstance().PlayJumpSFX();
             _onWeweJump.Raise();
             _playerAnimator.Play(_jumpAnimationHash);
             _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);

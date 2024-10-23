@@ -46,6 +46,7 @@ public class LaneSwitcher : MonoBehaviour
     {
         if (_currentLane > 0) 
         {
+            SFXHandler.GetInstance().PlayDodgeSFX();
             _playerAnimator.Play(_dodgeRightAnimationHash);
             _currentLane--;
             _targetPosition = new Vector3(transform.position.x, transform.position.y, _currentLane * _laneDistance - _laneDistance);
@@ -56,6 +57,7 @@ public class LaneSwitcher : MonoBehaviour
     {
         if (_currentLane < 2)
         {
+            SFXHandler.GetInstance().PlayDodgeSFX();
             _playerAnimator.Play(_dodgeLeftAnimationHash);
             _currentLane++;
             _targetPosition = new Vector3(transform.position.x, transform.position.y, _currentLane * _laneDistance - _laneDistance);

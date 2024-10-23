@@ -9,6 +9,7 @@ public class Coin : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            SFXHandler.GetInstance().PlayCollectbleSFX();
             _onCollectCoins.Raise();
             gameObject.SetActive(false);
         }

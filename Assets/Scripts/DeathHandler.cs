@@ -10,6 +10,7 @@ public class DeathHandler : MonoBehaviour
     [SerializeField] private GameEventNoParam _onWeweVictory;
     public void OnPlayDeathAnimation()
     {
+        SFXHandler.GetInstance().PlayDeathSFX();
         _playerAnimator.Play(_deathAnimationHash);
         _onWeweVictory.Raise();
         StartCoroutine(OnDelayGameOverCanvas());

@@ -31,6 +31,7 @@ public class SlideController : MonoBehaviour
         _isSlide = true;
         _dodgeCapsuleCollider.enabled = true;
         _normalCapsuleCollider.enabled = false;
+        SFXHandler.GetInstance().PlayDodgeSFX();
         _playerAnimator.Play(_slideAnimationHash);
         //StartCoroutine(OnDelayWeweSlideAnimation());
         _onWeweSlide.Raise();
