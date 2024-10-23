@@ -6,8 +6,17 @@ using UnityEngine;
 public class CoinManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI[] _coinText;
+    [SerializeField] private TextMeshProUGUI _totalCoinTextPause;
+    [SerializeField] private TextMeshProUGUI _totalCoinTextGameOver;
     private int _collectedCoins = 0;
-    
+
+    public int CollectedCoins => _collectedCoins;
+
+    private void Start()
+    {
+        _totalCoinTextPause.SetText(SaveManager.GetInstance().CurrentGold.ToString());
+    }
+
     public void OnCollectCoins()
     {
         _collectedCoins++;
@@ -15,5 +24,10 @@ public class CoinManager : MonoBehaviour
         {
             gold.SetText(_collectedCoins.ToString());
         }
+    }
+
+    public void UpdateCurrentGoldText()
+    {
+        _totalCoinTextGameOver.SetText(SaveManager.GetInstance().CurrentGold.ToString());
     }
 }

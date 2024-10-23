@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneHandler : MonoBehaviour
 {
+    //Method code yang dipanggil untuk ke scene game
+    public void OnStartGame()
+    {
+        int randomRange = Random.Range(1, 3);
+        SceneManager.LoadScene(randomRange);
+    }
+
     //Method code yang dipanggil untuk restart game
     public void OnRestartGame()
     {

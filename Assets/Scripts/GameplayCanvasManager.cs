@@ -45,6 +45,7 @@ public class GameplayCanvasManager : MonoBehaviour
 
     public void OpenGameOver()
     {
+        Debug.Log("Open Game Over");
         DisableAllCanvas();
         _gameOver.SetActive(true);
     }
