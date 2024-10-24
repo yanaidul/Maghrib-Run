@@ -9,6 +9,7 @@ public class JumpController : MonoBehaviour
     private readonly int _runAnimationHash = Animator.StringToHash("Run");
 
     [SerializeField] private Animator _playerAnimator;
+    [SerializeField] private Wewe _wewe;
     [SerializeField] private GameEventNoParam _onWeweRun;
     [SerializeField] private GameEventNoParam _onWeweJump;
     [SerializeField] private float _jumpForce = 5f; 
@@ -37,6 +38,8 @@ public class JumpController : MonoBehaviour
     {
         if (_isGrounded)
         {
+            if (GetComponent<DeathHandler>().isDead) return;
+            _wewe.WeweJump();
             SFXHandler.GetInstance().PlayJumpSFX();
             _onWeweJump.Raise();
             _playerAnimator.Play(_jumpAnimationHash);

@@ -300,9 +300,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 905416648}
+  - {fileID: 1575025131}
+  - {fileID: 654858292}
+  - {fileID: 1035794950}
+  - {fileID: 389020173}
+  - {fileID: 770371353}
+  - {fileID: 771160846}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1001 &27465714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2176,6 +2184,9 @@ GameObject:
   - component: {fileID: 116848134}
   - component: {fileID: 116848133}
   - component: {fileID: 116848132}
+  - component: {fileID: 116848138}
+  - component: {fileID: 116848137}
+  - component: {fileID: 116848136}
   m_Layer: 0
   m_Name: Wewe
   m_TagString: Untagged
@@ -2191,13 +2202,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116848129}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.004504564, y: -0.70709246, z: 0.004504564, w: 0.70709246}
-  m_LocalPosition: {x: -0.008184657, y: 0.0970723, z: -1.4313531}
-  m_LocalScale: {x: 0.49999988, y: 0.50000006, z: 0.49999988}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.8600006, y: 0.7306014, z: 0.016369581}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1388482341}
-  m_Father: {fileID: 543450651641652793}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &116848131
 MonoBehaviour:
@@ -2324,6 +2335,69 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &116848136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116848129}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 0.67, z: 0.4}
+  m_Center: {x: -0.008184776, y: 0.115322195, z: 0.00095365173}
+--- !u!54 &116848137
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116848129}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
+--- !u!114 &116848138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116848129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e9dce4d4c75504aa364042e8dd07ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _laneDistance: 2
+  _switchSpeed: 10
+  _jumpForce: 30
 --- !u!1001 &117521533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7167,9 +7241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins: []
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1001 &403248903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9985,8 +10060,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isDontDestroyOnLoad: 1
+  currentStage: 0
+  currentGold: 0
+  currentHighScore: 0
   isSFXOn: 1
   isBGMOn: 1
+  isFromLoading: 0
 --- !u!4 &583083396
 Transform:
   m_ObjectHideFlags: 0
@@ -11046,9 +11125,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 1700070122}
+  - {fileID: 373624060}
+  - {fileID: 1011848904}
+  - {fileID: 1334614842}
+  - {fileID: 2013008321}
+  - {fileID: 1263287680}
+  - {fileID: 2077301799}
+  - {fileID: 1755974728}
+  - {fileID: 428126481}
+  - {fileID: 800322526}
+  - {fileID: 855907743}
+  - {fileID: 1758671256}
+  - {fileID: 125189887}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1001 &646332923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12892,9 +12985,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 1701748682}
+  - {fileID: 1825432598}
+  - {fileID: 1537349144}
+  - {fileID: 567768955}
+  - {fileID: 1493828617}
+  - {fileID: 1501643}
+  - {fileID: 152986147}
+  - {fileID: 826883486}
+  - {fileID: 1787197560}
+  - {fileID: 1373313872}
+  - {fileID: 1306437154}
+  - {fileID: 1744276586}
+  - {fileID: 1813708684}
+  - {fileID: 754322916}
+  - {fileID: 2011933955}
+  - {fileID: 619049085}
+  - {fileID: 1227961261}
+  - {fileID: 1887791202}
+  - {fileID: 108700918}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1001 &733693520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16723,9 +16836,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 1166995041}
+  - {fileID: 1696350478}
+  - {fileID: 654624925}
+  - {fileID: 408692020}
+  - {fileID: 1677228381}
+  - {fileID: 1575216948}
+  - {fileID: 1299071291}
+  - {fileID: 1164429081}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1001 &937771992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24913,9 +25035,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 1427134395}
+  - {fileID: 1371755933}
+  - {fileID: 1954290634}
+  - {fileID: 1041761345}
+  - {fileID: 1785579345}
+  - {fileID: 2001361426}
+  - {fileID: 547182190}
+  - {fileID: 861728674}
+  - {fileID: 741749123}
+  - {fileID: 1241751671}
+  - {fileID: 1992076762}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1 &1383402371 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -36566,9 +36700,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 167114029}
+  - {fileID: 1940312521}
+  - {fileID: 2109325684}
+  - {fileID: 898859912}
+  - {fileID: 1383402371}
+  - {fileID: 65125908}
+  - {fileID: 505357270}
+  - {fileID: 2013603867}
+  - {fileID: 1693455362}
+  - {fileID: 2045320}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1 &1427134395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -37661,9 +37806,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 114504977}
+  - {fileID: 330955696}
+  - {fileID: 1880927084}
+  - {fileID: 482883765}
+  - {fileID: 295734261}
+  - {fileID: 1111765079}
+  - {fileID: 929500641}
+  - {fileID: 597936381}
+  - {fileID: 1064325831}
+  - {fileID: 76037482}
+  - {fileID: 1318799721}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1001 &1485818087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42365,9 +42522,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 1580729010}
+  - {fileID: 1079327127}
+  - {fileID: 1116837940}
+  - {fileID: 1948670546}
+  - {fileID: 456173695}
+  - {fileID: 1925062430}
+  - {fileID: 1999119679}
+  - {fileID: 394199251}
+  - {fileID: 1838194408}
+  - {fileID: 1617735667}
+  - {fileID: 1492588547}
+  - {fileID: 1441136143}
+  - {fileID: 353569866}
+  - {fileID: 1486620641}
+  - {fileID: 650476371}
+  - {fileID: 2118635041}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1 &1736173311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -45498,9 +45672,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 835313472}
+  - {fileID: 698080368}
+  - {fileID: 917419894}
+  - {fileID: 87187663}
+  - {fileID: 1567138911}
+  - {fileID: 748058500}
+  - {fileID: 1965605095}
+  - {fileID: 846024176}
+  - {fileID: 1866713472}
+  - {fileID: 1100156552}
+  - {fileID: 50893139}
+  - {fileID: 2049243890}
+  - {fileID: 423033115}
+  - {fileID: 862861036}
+  - {fileID: 559612356}
+  - {fileID: 66851246}
+  - {fileID: 1399796641}
+  - {fileID: 256097415}
+  - {fileID: 1789461904}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!4 &1877174061 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7586592376730850124, guid: 06103d14af0f62c4cbbb65e5b045ba53,
@@ -46687,9 +46881,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 532433298}
+  - {fileID: 794416287}
+  - {fileID: 169097359}
+  - {fileID: 1407884919}
+  - {fileID: 1962444219}
+  - {fileID: 805485911}
+  - {fileID: 41646990}
+  - {fileID: 854763747}
+  - {fileID: 792555644}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1001 &1935833849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47407,9 +47611,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2dce3e5ae968a1499d680b085eb6ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coins:
+  - {fileID: 881284828}
+  - {fileID: 433355202}
+  - {fileID: 1736173311}
+  - {fileID: 55781792}
+  - {fileID: 1726571254}
+  - {fileID: 1355137680}
+  - {fileID: 1305813798}
+  - {fileID: 425693187}
+  - {fileID: 1956134990}
+  - {fileID: 140684777}
+  - {fileID: 531201776}
+  - {fileID: 806069290}
+  - {fileID: 2140168897}
+  - {fileID: 1874795632}
+  - {fileID: 587305370}
+  - {fileID: 717008148}
+  - {fileID: 1281072266}
+  - {fileID: 594408433}
   speed: 10
   resetPosition: -30
-  startPosition: 330
+  startPosition: 320
 --- !u!1 &1956134990 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0970c400789c49047a5f52a5ad0912f0,
@@ -53400,7 +53623,6 @@ Transform:
   - {fileID: 5168745001326110797}
   - {fileID: 3008423565751959847}
   - {fileID: 2077631023}
-  - {fileID: 116848130}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.73, y: 90, z: 0}
 --- !u!4 &543450651874826549
@@ -54668,6 +54890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerAnimator: {fileID: 919132147992657028}
+  _wewe: {fileID: 116848138}
   _laneDistance: 2
   _switchSpeed: 10
 --- !u!114 &919132147992657032
@@ -54683,6 +54906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerAnimator: {fileID: 919132147992657028}
+  _wewe: {fileID: 116848138}
   _onWeweRun: {fileID: 11400000, guid: 3be4d1d61514d5e40a6cea038a17bf2b, type: 2}
   _onWeweJump: {fileID: 11400000, guid: 4daad643a3e9b0a4c8e704dd78211468, type: 2}
   _jumpForce: 30
@@ -54781,6 +55005,7 @@ MonoBehaviour:
   _scoreManager: {fileID: 157098960}
   _onGameOver: {fileID: 11400000, guid: 5841d490cef9ebe438b2fa3d247114ab, type: 2}
   _onWeweVictory: {fileID: 11400000, guid: c98225f213056e9439b265c4d4f4fac3, type: 2}
+  isDead: 0
 --- !u!114 &919132147992657037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78313,4 +78538,5 @@ SceneRoots:
   - {fileID: 691404874}
   - {fileID: 1415835788}
   - {fileID: 1965703263}
+  - {fileID: 116848130}
   - {fileID: 583083396}

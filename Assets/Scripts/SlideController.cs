@@ -28,6 +28,7 @@ public class SlideController : MonoBehaviour
 
     public void Dodge()
     {
+        if (GetComponent<DeathHandler>().isDead) return;
         _isSlide = true;
         _dodgeCapsuleCollider.enabled = true;
         _normalCapsuleCollider.enabled = false;
@@ -40,7 +41,7 @@ public class SlideController : MonoBehaviour
 
     IEnumerator ReturnToRunStateFromSlide()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         _dodgeCapsuleCollider.enabled = false;
         _normalCapsuleCollider.enabled = true;
         _isSlide = false;

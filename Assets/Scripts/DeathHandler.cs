@@ -10,8 +10,17 @@ public class DeathHandler : MonoBehaviour
     [SerializeField] private ScoreManager _scoreManager;
     [SerializeField] private GameEventNoParam _onGameOver;
     [SerializeField] private GameEventNoParam _onWeweVictory;
+    public bool isDead = false;
+
+    private void Start()
+    {
+        isDead = false;
+    }
+
+
     public void OnPlayDeathAnimation()
     {
+        isDead = true;
         SFXHandler.GetInstance().PlayDeathSFX();
         _playerAnimator.Play(_deathAnimationHash);
         _onWeweVictory.Raise();
