@@ -11,11 +11,13 @@ public class Wewe : MonoBehaviour
     private Rigidbody _rb;
     private Vector3 _targetPosition;
     private bool _isGrounded;
+    private WeweAnimationController _animationController;
 
     void Start()
     {
         _targetPosition = transform.position;
         _rb = GetComponent<Rigidbody>();
+        _animationController = GetComponent<WeweAnimationController>();
     }
 
     private void Update()
@@ -45,6 +47,7 @@ public class Wewe : MonoBehaviour
         yield return new WaitForSeconds(0.2F);
         if (_currentLane < 2)
         {
+            _animationController.OnDodgeLeft();
             _currentLane++;
             _targetPosition = new Vector3(transform.position.x, transform.position.y, _currentLane * _laneDistance - _laneDistance);
         }
@@ -55,6 +58,7 @@ public class Wewe : MonoBehaviour
         yield return new WaitForSeconds(0.2F);
         if (_currentLane > 0)
         {
+            _animationController.OnDodgeRight();
             _currentLane--;
             _targetPosition = new Vector3(transform.position.x, transform.position.y, _currentLane * _laneDistance - _laneDistance);
         }

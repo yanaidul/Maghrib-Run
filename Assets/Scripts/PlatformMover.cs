@@ -10,7 +10,7 @@ public class PlatformMover : MonoBehaviour
     public float startPosition = 20f;
     private bool _isStopped = false;
 
-    void Update()
+    void FixedUpdate()
     {
         if (_isStopped) return;
         transform.Translate(Vector3.left * speed * Time.deltaTime);
