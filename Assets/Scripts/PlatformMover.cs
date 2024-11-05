@@ -13,9 +13,9 @@ public class PlatformMover : MonoBehaviour
     void FixedUpdate()
     {
         if (_isStopped) return;
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        transform.Translate(Vector3.left * speed * Time.fixedDeltaTime);
 
-        if (transform.position.x < resetPosition)
+        if (transform.position.x <= resetPosition)
         {
             ResetPlatform();
         }
