@@ -9,14 +9,14 @@ public class SceneHandler : MonoBehaviour
     public void OnStartGame()
     {
         SaveManager.GetInstance().CurrentStage++;
-        SceneManager.LoadScene(SaveManager.GetInstance().CurrentStage);
+        SceneManager.LoadScene(1);
     }
 
     //Method code yang dipanggil untuk restart game
     public void OnRestartGame()
     {
         SaveManager.GetInstance().CurrentStage++;
-        SceneManager.LoadScene(SaveManager.GetInstance().CurrentStage);
+        SceneManager.LoadScene(1);
     }
 
     //Method code yang dipanggil untuk kembali ke main menu

@@ -15,6 +15,7 @@ public class ScoreManager : MonoBehaviour
         if (isRunning)
         {
             _score += Time.deltaTime * scoreMultiplier;
+            if (_score > 10 && (_score % 500 <= 10)) PlatformManager.GetInstance().RandomizeSelectedPlatformIndex();
             foreach (var score in _scoreText)
             {
                 score.SetText(Mathf.FloorToInt(_score).ToString());

@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage - Maghrib.unity
     guid: 430295cb2d41af24fb2301b09ded6c3e
   - enabled: 1
-    path: Assets/Scenes/Stage - Sawah.unity
+    path: Assets/Scenes/Stage - Jagung.unity
     guid: d00cbfef3fa15de48aa0fed03131e3b1
   m_configObjects: {}
