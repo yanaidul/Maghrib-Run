@@ -24,7 +24,12 @@ public class PlatformManager : Singleton<PlatformManager>
 
     public void RandomizeSelectedPlatformIndex()
     {
-        selectedPlatformIndex = Random.Range(0, 3);
+        int random = Random.Range(0, 3);
+        while (random == selectedPlatformIndex)
+        {
+            random = Random.Range(0, 3);
+        }
+        selectedPlatformIndex = random;
     }
 
 }
