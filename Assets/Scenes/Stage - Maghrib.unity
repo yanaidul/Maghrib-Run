@@ -1002,6 +1002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104013419}
   - component: {fileID: 104013418}
+  - component: {fileID: 104013420}
   m_Layer: 0
   m_Name: Platform 7
   m_TagString: Untagged
@@ -1046,6 +1047,34 @@ Transform:
   - {fileID: 1056528065}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &104013420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104013417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 104013418}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &116848129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1092,7 @@ GameObject:
   - component: {fileID: 116848136}
   - component: {fileID: 116848138}
   - component: {fileID: 116848137}
+  - component: {fileID: 116848139}
   m_Layer: 0
   m_Name: Wewe
   m_TagString: Untagged
@@ -1226,6 +1256,8 @@ MonoBehaviour:
   _laneDistance: 2
   _switchSpeed: 8
   _jumpForce: 30
+  _playerTransform: {fileID: 543450651641652793}
+  _onObstacleCrash: {fileID: 11400000, guid: 77c497b086392144884720996d45d139, type: 2}
 --- !u!65 &116848137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1274,6 +1306,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &116848139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116848129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 1333df14d3f37a147808bad760b22234, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 116848136}
+        m_TargetAssemblyTypeName: Wewe, Assembly-CSharp
+        m_MethodName: DecreaseSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &132526570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1423,9 @@ MonoBehaviour:
   - {fileID: 754281712}
   - {fileID: 784276403}
   scoreMultiplier: 10
+  _onIncreasePlatformSpeed: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf,
+    type: 2}
+  _score: 0
 --- !u!114 &157098961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7642,6 +7705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1061932784}
   - component: {fileID: 1061932783}
+  - component: {fileID: 1061932785}
   m_Layer: 0
   m_Name: Platform 1
   m_TagString: Untagged
@@ -7686,6 +7750,34 @@ Transform:
   - {fileID: 484765687}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061932785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061932782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1061932783}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1062829139
 GameObject:
   m_ObjectHideFlags: 0
@@ -8314,6 +8406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121707456}
   - component: {fileID: 1121707455}
+  - component: {fileID: 1121707457}
   m_Layer: 0
   m_Name: Platform 6
   m_TagString: Untagged
@@ -8358,6 +8451,34 @@ Transform:
   - {fileID: 2057713135}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1121707457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121707454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1121707455}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1130897255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9022,6 +9143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1231168980}
   - component: {fileID: 1231168979}
+  - component: {fileID: 1231168981}
   m_Layer: 0
   m_Name: Platform 4
   m_TagString: Untagged
@@ -9066,6 +9188,34 @@ Transform:
   - {fileID: 1112635077}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1231168981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231168978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1231168979}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1239689512
 GameObject:
   m_ObjectHideFlags: 0
@@ -20979,6 +21129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1398116069}
   - component: {fileID: 1398116068}
+  - component: {fileID: 1398116070}
   m_Layer: 0
   m_Name: Platform 8
   m_TagString: Untagged
@@ -21023,6 +21174,34 @@ Transform:
   - {fileID: 1408573201}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1398116070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398116067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1398116068}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1406376953
 GameObject:
   m_ObjectHideFlags: 0
@@ -22003,6 +22182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1592505684}
   - component: {fileID: 1592505683}
+  - component: {fileID: 1592505685}
   m_Layer: 0
   m_Name: Platform 12
   m_TagString: Untagged
@@ -22047,6 +22227,34 @@ Transform:
   - {fileID: 876987741}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1592505685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592505682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1592505683}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1622316206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22204,6 +22412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640703520}
   - component: {fileID: 1640703519}
+  - component: {fileID: 1640703521}
   m_Layer: 0
   m_Name: Platform 3
   m_TagString: Untagged
@@ -22248,6 +22457,34 @@ Transform:
   - {fileID: 1372416817}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1640703521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640703518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1640703519}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1648496426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22787,6 +23024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1701910670}
   - component: {fileID: 1701910669}
+  - component: {fileID: 1701910671}
   m_Layer: 0
   m_Name: Platform 5
   m_TagString: Untagged
@@ -22831,6 +23069,34 @@ Transform:
   - {fileID: 81925262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1701910671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701910668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1701910669}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1704760067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23446,6 +23712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1801645792}
   - component: {fileID: 1801645791}
+  - component: {fileID: 1801645793}
   m_Layer: 0
   m_Name: Platform 2
   m_TagString: Untagged
@@ -23490,6 +23757,34 @@ Transform:
   - {fileID: 629663515}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1801645793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801645790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1801645791}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1813105810
 GameObject:
   m_ObjectHideFlags: 0
@@ -23500,6 +23795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813105812}
   - component: {fileID: 1813105811}
+  - component: {fileID: 1813105813}
   m_Layer: 0
   m_Name: Platform 9
   m_TagString: Untagged
@@ -23544,6 +23840,34 @@ Transform:
   - {fileID: 412042829}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1813105813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813105810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1813105811}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1853493103
 GameObject:
   m_ObjectHideFlags: 0
@@ -23812,6 +24136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885158921}
   - component: {fileID: 1885158920}
+  - component: {fileID: 1885158922}
   m_Layer: 0
   m_Name: Platform 11
   m_TagString: Untagged
@@ -23856,6 +24181,34 @@ Transform:
   - {fileID: 638756661}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1885158922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885158919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1885158920}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1891990185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24227,6 +24580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1962862009}
   - component: {fileID: 1962862008}
+  - component: {fileID: 1962862010}
   m_Layer: 0
   m_Name: Platform 10
   m_TagString: Untagged
@@ -24271,6 +24625,34 @@ Transform:
   - {fileID: 636269841}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1962862010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962862007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e49b0a6bad7cef47832b609ead78729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEventNoParam: {fileID: 11400000, guid: 4597a0beb37101d42b3b3de5980208cf, type: 2}
+  _responsesNoParam:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1962862008}
+        m_TargetAssemblyTypeName: PlatformMover, Assembly-CSharp
+        m_MethodName: OnIncreasePlatformSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1963404053
 GameObject:
   m_ObjectHideFlags: 0

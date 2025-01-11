@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Wewe : MonoBehaviour
@@ -7,10 +8,13 @@ public class Wewe : MonoBehaviour
     [SerializeField] private float _laneDistance = 2f;
     [SerializeField] private float _switchSpeed = 10f;
     [SerializeField] private float _jumpForce = 5f;
+    [SerializeField] private Transform _playerTransform;
+    [SerializeField] private GameEventNoParam _onObstacleCrash;
     private int _currentLane = 1;
     private Rigidbody _rb;
     private Vector3 _targetPosition;
     private bool _isGrounded;
+    private float _distance;
     private WeweAnimationController _animationController;
 
     void Start()
@@ -18,12 +22,18 @@ public class Wewe : MonoBehaviour
         _targetPosition = transform.position;
         _rb = GetComponent<Rigidbody>();
         _animationController = GetComponent<WeweAnimationController>();
+        StartCoroutine(IncreaseSpeed());
     }
 
     private void Update()
     {
         if (!_isGrounded) return;
         transform.position = Vector3.Lerp(transform.position, _targetPosition, Time.deltaTime * _switchSpeed);
+
+
+        _distance = Vector3.Distance(transform.position, _playerTransform.position);
+
+        Debug.Log(_distance);
     }
 
 
@@ -73,6 +83,30 @@ public class Wewe : MonoBehaviour
             _isGrounded = false;
         }
 
+    }
+
+    IEnumerator IncreaseSpeed()
+    {
+        yield return new WaitForSeconds(0.25F);
+        if (_distance > 0.4f)
+        {
+            _targetPosition += Vector3.right * 0.1f;
+            StartCoroutine(IncreaseSpeed());
+        }
+        else
+        {
+            _onObstacleCrash.Raise();
+        }
+
+    }
+
+    public void DecreaseSpeed()
+    {
+        if (_distance < 4f)
+        {
+            _targetPosition += Vector3.left * 0.2f;
+        }
+        
     }
 
     private void OnCollisionEnter(Collision collision)

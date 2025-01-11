@@ -52,4 +52,9 @@ public class PlatformMover : MonoBehaviour
         _isStopped = true;
         speed = 0;
     }
+
+    public void OnIncreasePlatformSpeed()
+    {
+        speed++;
+    }
 }
